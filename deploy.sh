@@ -5,4 +5,4 @@
 
 ##编译
 cd $PROJ_PATH/app_demo
-mvn clean install
+mvn clean install -DskipTests
