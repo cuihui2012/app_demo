@@ -7,6 +7,7 @@ import com.bird.business.domain.TbUserExample;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
+import org.apache.shiro.crypto.SecureRandomNumberGenerator;
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
@@ -95,9 +96,9 @@ public class CustomRealm extends AuthorizingRealm {
 
     public static void main(String args[]) {
         //Md5加密
-        Md5Hash md5Hash = new Md5Hash("201908140120190827|v>!_j4j:Q");
+//        Md5Hash md5Hash = new Md5Hash("201908140120190827|v>!_j4j:Q");
         //Md5加密加盐
-//        Md5Hash md5Hash = new Md5Hash("123456", "cuihui");
+        Md5Hash md5Hash = new Md5Hash("123456", "cuihui");
         System.out.println(md5Hash.toString());
     }
 }
