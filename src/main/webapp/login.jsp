@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>用户登录--这是一个测试</title>
+    <title>用户登录</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="${ctx}/images/favicon.ico" />
 
@@ -25,7 +25,7 @@
 
 <div class="video_mask"></div>
 <div class="login">
-    <h1>用户登录</h1>
+    <h1>用户登录--这是一个测试</h1>
     <form class="layui-form" id="form">
         <div class="layui-form-item">
             <input class="layui-input" name="username" placeholder="用户名" value="admin" lay-verify="required" type="text" autocomplete="off">
