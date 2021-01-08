@@ -7,6 +7,7 @@
 cd $PROJ_PATH/app_demo
 mvn clean install -DskipTests
 ##war包部署
-docker cp $PROJ_PATH/app_demo/target/app_demo.war 80a011bf441a:/usr/local/tomcat/webapps
+cp $PROJ_PATH/app_demo/target/app_demo.war /root/docker-container-config/app_demo/app
 ##重启docker容器
-docker restart 80a011bf441a
+docker restart app_demo1
+docker restart app_demo2
